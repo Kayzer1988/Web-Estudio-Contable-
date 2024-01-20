@@ -1,0 +1,275 @@
+/* Establece el tamaño base de la fuente en el 62.5% del tamaño por defecto */
+html {
+    font-size: 62.5%;
+}
+
+/* Elimina márgenes y rellenos por defecto*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #848b97;
+    font-size: 2.0rem;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajusta el espacio interno según tus necesidades */
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+/* Contenido del encabezado (título) */
+.header-content {
+    text-align: center;
+    flex-grow: 1; /* Añade esta línea para ocupar el espacio restante y empujar la navegación hacia la derecha */
+}
+
+/* Estilos para el párrafo dentro del encabezado */
+header p {
+    font-size: 2.5rem;
+    color: #2d2a32; 
+    font-weight: 800;
+    text-shadow: 2px -2px 2px rgba(0,0,0,0.3);
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none;
+    /* Alinea los elementos de la navegación al final del contenedor */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav ul li {
+    margin-left: 15px; /* Ajusta el margen entre elementos de la navegación */
+}
+
+/* Estilos para los enlaces de la navegación */
+nav a {
+    text-decoration: none;
+    color: #2d2a32;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(242, 241, 241);
+}
+
+/* Estilos para la sección específica del índice */
+.flex-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px;
+}
+
+/* Estilos para el párrafo de bienvenida */
+.bienvenido {
+    line-height: 27px;
+    text-align: justify;
+    width: 600px;
+    text-align: center;
+    margin: 50px;
+}
+
+/* Estilos para el banner de la sección */
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+/* Estilos para el título de la sección */
+.titulo {
+    font-size: 3.5rem;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Estilos para subtítulos */
+h2 {
+    font-size: 2.5rem;
+}
+
+/* Estilos para subtítulos grises */
+.subtitulo {
+    color: grey;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* Estilos para párrafos de texto justificado */
+p {
+    text-align: justify;
+    font-size: 2.0rem;
+}
+
+/* Estilos para la imagen de la empresa */
+.empresa {
+    width: 720px;
+    height: 500px;
+}
+
+/* Estilos para texto de aclaración en gris */
+.aclaracion {
+    color: grey;
+}
+
+/* Estilos para texto de clientes subrayado */
+.clientes {
+    text-decoration: underline;
+}
+
+/* Estilos para la imagen del cliente */
+.foto-cliente {
+    width: 300px;
+    height: 450px;
+}
+
+/* Estilos para la sección de opiniones */
+.opiniones {
+    background-color: antiquewhite;
+    width: 400px;
+    text-align: center;
+    border: 5px solid black; 
+    padding: 10px; 
+    margin: 10px;
+}
+
+/* Estilos para el banner de servicios */
+.banner-servicios {
+    width: 100%;
+    height: 400px;
+}
+
+/* Estilos para el parrafo de servicios */
+.parrafo-servicios{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 30px;
+}
+
+/* Estilos de grid para la sección de servicios */
+.contenedor-servicios{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6";
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 400px*2;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Estilos para la sección de servicios */
+.servicios {
+    background-color: antiquewhite;
+    width: 250px;
+    height: 330px;
+    text-align: center;
+    border: 5px solid black; 
+    padding: 20px; 
+    margin: 20px;
+}
+
+/* Estilos para títulos de servicios */
+.servicios h3 {
+    font-size: 2.0rem;
+}
+
+/* Estilos para párrafos de servicios */
+.servicios p {
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+/* Estilos de grid para la sección de nosotros */
+.contenedor-nosotros{
+    display: grid;
+    grid-template-areas: 
+    "texto1 img1"
+    "texto2 texto2";
+    grid-template-columns: 40% 30%;
+    grid-template-rows: 550px 350px;
+    justify-content: space-evenly;
+    justify-items: end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.imgalderete{
+    grid-area: img1;
+}
+
+.texto1-nosotros{
+    grid-area: texto1;
+}
+
+.texto2-nosotros{
+    grid-area: texto2;
+}
+
+/* Estilos para enlaces en secciones principales */
+main section a {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #bc66c7;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+
+/* Estilos para el formulario */
+.formulario {
+    width: 25vw;
+    border: 5px solid black; 
+    padding: 10px; 
+    margin: 10px;
+    font-size: 1.8rem;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #dde3ee;
+}
+
+/* Estilos para párrafos del pie de página */
+footer p {
+    font-size: 1.5rem;
+}
+
+/* Estilos para iconos de redes sociales */
+.redes-sociales {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos para*/
+.flex-footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+}
