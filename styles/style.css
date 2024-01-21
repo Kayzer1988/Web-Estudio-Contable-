@@ -21,6 +21,11 @@ header {
     padding: 10px 20px; /* Ajusta el espacio interno según tus necesidades */
 }
 
+/* Establece una altura mínima del 100% del viewport height */
+main {
+    min-height: 100vh;
+}
+
 /* Estilos para el logo */
 .logo img {
     width: 100px;
@@ -68,6 +73,7 @@ nav a {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(242, 241, 241);
+    color: #333333;
 }
 
 /* Estilos para la sección específica del índice */
@@ -99,6 +105,7 @@ body {
     text-decoration: underline;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 75px;
 }
 
 /* Estilos para subtítulos */
@@ -149,6 +156,65 @@ p {
     border: 5px solid black; 
     padding: 10px; 
     margin: 10px;
+}
+
+/* Estilos de grid para la sección de opiniones */
+.contenedor-opiniones{
+    display: grid;
+    grid-template-areas: 
+    "opinion1 marca1"
+    "marca2   opinion2"
+    "opinion3 marca3"
+    "marca4   opinion4"
+    "opinion5 marca5";
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 400px*2;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    row-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.cliente1{
+    grid-area: opinion1;
+}
+
+.cliente2{
+    grid-area: opinion2;
+}
+
+.cliente3{
+    grid-area: opinion3;
+}
+
+.cliente4{
+    grid-area: opinion4;
+}
+
+.cliente5{
+    grid-area: opinion5;
+}
+
+.logo-cliente1{
+    grid-area: marca1;
+}
+
+.logo-cliente2{
+    grid-area: marca2;
+}
+
+.logo-cliente3{
+    grid-area: marca3;
+}
+
+.logo-cliente4{
+    grid-area: marca4;
+}
+
+.logo-cliente5{
+    grid-area: marca5;
 }
 
 /* Estilos para el banner de servicios */
@@ -240,6 +306,26 @@ main section a {
     border-radius: 5px;
 }
 
+.flex-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.titulo-formulario{
+    display: block;
+    margin: 20px auto;
+    background-color: #a8c0ff;
+    text-align: center;
+    margin-left: 330px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 20%
+}
+
 /* Estilos para el formulario */
 .formulario {
     width: 25vw;
@@ -268,7 +354,6 @@ footer p {
 /* Estilos para*/
 .flex-footer{
     display: flex;
-    justify-content: center;
     justify-content: space-between;
     margin-right: 100px;
     margin-left: 100px;
