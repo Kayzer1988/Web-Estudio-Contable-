@@ -105,7 +105,6 @@ body {
     text-decoration: underline;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 75px;
 }
 
 /* Estilos para subtítulos */
@@ -317,11 +316,14 @@ main section a {
 .titulo-formulario{
     display: block;
     margin: 20px auto;
-    background-color: #a8c0ff;
+    background-color: #0d2c7c;
+    color: aliceblue;
     text-align: center;
     margin-left: 330px;
+    margin-top: 75px;
     padding: 10px 20px;
     text-align: center;
+    border: 2px solid black;
     border-radius: 5px;
     max-width: 20%
 }
