@@ -24,9 +24,15 @@ header{
     top: 0%;
 }
 
+.nav-titulo{
+    font-size: 3.5rem;
+    margin-left: auto;
+    color: white;
+}
+
 /* Establece una altura mínima del 100% del viewport height */
 main {
-    min-height: 101vh;
+    min-height: 100vh;
 }
 
 /* Estilos generales del cuerpo de la página */
@@ -325,4 +331,40 @@ footer p {
     margin-left: 100px;
 }
 
- /*Color viejo bc66c7*/
+ /* Media Q mobile*/
+@media only screen and (max-width: 480px){
+    .banner{
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .flex-index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding-top: 20px;
+        flex-grow: 1;        
+    }
+
+    .bienvenido{
+        font-size: 1.5rem;
+        width: 95%;
+        text-align: justify;
+    }
+
+    .empresa{
+        max-width: 95%; /* La imagen no será más ancha que su contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 950px){
+
+}
+
+@media only screen and (min-width: 951px){
+
+}
