@@ -113,6 +113,13 @@ p {
     height: 450px;
 }
 
+.parrafo-opiniones{
+margin-left: 300px;
+margin-right: 300px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
 /* Estilos para la sección de opiniones */
 .opiniones {
     background-color: antiquewhite;
@@ -121,6 +128,10 @@ p {
     border: 5px solid black; 
     padding: 10px; 
     margin: 10px;
+}
+
+.opiniones p{
+    text-align: center;
 }
 
 /* Estilos de grid para la sección de opiniones */
@@ -133,7 +144,7 @@ p {
     "marca4   opinion4"
     "opinion5 marca5";
     grid-template-columns: 40% 40%;
-    grid-template-rows: 400px*2;
+    grid-template-rows: 850px repeat(4,850px);
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -288,7 +299,6 @@ main section a {
     background-color: crimson;
     color: aliceblue;
     text-align: center;
-    margin-left: 330px;
     margin-top: 75px;
     padding: 10px 20px;
     text-align: center;
@@ -305,6 +315,14 @@ main section a {
     margin: 10px;
     font-size: 1.8rem;
 }
+
+.formulario input {
+    width: 100%; /* O ajusta el valor según tus necesidades */
+  }
+
+.formulario textarea {
+    width: 100%; /* O ajusta el valor según tus necesidades */
+  }
 
 /* Estilos para el pie de página */
 footer {
@@ -333,14 +351,27 @@ footer p {
 
  /* Media Q mobile*/
 @media only screen and (max-width: 480px){
+
+    /*Index*/
+
+    .nav-titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .titulo{
+        font-size: 2.3rem;
+    }
+
+    .subtitulo{
+        font-size: 2.1rem;
+    }
+
     .banner{
         height: 150px;
-        background-size: cover;
-        background-position: center;
     }
     
     .flex-index{
-        display: flex;
         flex-direction: column;
         align-items: center;
         margin: auto;
@@ -357,14 +388,278 @@ footer p {
     .empresa{
         max-width: 95%; /* La imagen no será más ancha que su contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
-
     }
+
+    /*Servicios*/
+
+    .banner-servicios{
+        height: 150px;
+    }
+
+    .parrafo-servicios{
+        font-size: 1.5rem;
+        text-align: justify;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 25px;
+    }
+
+    .contenedor-servicios{
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+        grid-template-columns: 50%;
+        grid-template-rows: 400px repeat(5,400px);
+        align-items: center;
+    }
+
+    .servicios{
+        width: 250px;
+        height: 350px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .servicios h3{
+        font-size: 2.0rem;
+    }
+
+    .servicios p{
+        font-size: 1.5rem;
+    }
+
+    /*Nosotros*/
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-areas: 
+        "texto1"
+        "img1"
+        "texto2";
+        grid-template-columns: 95%;
+        grid-template-rows: 690px 550px 470px;
+        justify-items: center;
+    }
+
+    .texto1-nosotros p{
+        font-size: 1.5rem;
+    }
+    
+    .texto2-nosotros p{
+        font-size: 1.5rem;
+    }
+
+    /*Opiniones*/
+    .parrafo-opiniones{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+        }
+
+    .contenedor-opiniones{
+        grid-template-areas: 
+        "marca1"
+        "opinion1"
+        "marca2"
+        "opinion2"
+        "marca3"
+        "opinion3"
+        "marca4"
+        "opinion4"
+        "marca5"
+        "opinion5";
+        grid-template-columns: 95%;
+        grid-template-rows: 450px 850px repeat(4,450px 850px);
+    }
+
+    /*Contacto*/
+    .titulo-formulario{
+        max-width: 80%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2.0rem;
+    }
+
+    .flex-contacto{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        row-gap: 20px;
+    }
+
+    .formulario{
+        width: 95%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+        
 }
 
-@media only screen and (min-width: 481px) and (max-width: 950px){
 
-}
+@media only screen and (min-width: 481px) and (max-width: 760px){
+    /*Index*/
 
-@media only screen and (min-width: 951px){
+    .nav-titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
 
+    .titulo{
+        font-size: 2.3rem;
+    }
+
+    .subtitulo{
+        font-size: 2.1rem;
+    }
+
+    .banner{
+        height: 150px;
+    }
+
+    .flex-index{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding-top: 20px;
+        flex-grow: 1;        
+    }
+
+    .bienvenido{
+        font-size: 1.5rem;
+        width: 95%;
+        text-align: justify;
+    }
+
+    .empresa{
+        max-width: 95%;
+        height: auto;
+    }
+
+    /*Servicios*/
+
+    .banner-servicios{
+        height: 150px;
+    }
+
+    .parrafo-servicios{
+        font-size: 1.5rem;
+        text-align: justify;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 25px;
+    }
+
+    .contenedor-servicios{
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+        grid-template-columns: 50%;
+        grid-template-rows: 400px repeat(5,400px);
+        align-items: center;
+    }
+
+    .servicios{
+        width: 250px;
+        height: 350px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .servicios h3{
+        font-size: 2.0rem;
+    }
+
+    .servicios p{
+        font-size: 1.5rem;
+    }
+
+    /*Nosotros*/
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-areas: 
+        "texto1"
+        "img1"
+        "texto2";
+        grid-template-columns: 95%;
+        grid-template-rows: 650px 550px 470px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .texto1-nosotros p{
+        font-size: 1.5rem;
+    }
+
+    .texto2-nosotros p{
+        font-size: 1.5rem;
+    }
+
+    /*Opiniones*/
+    .parrafo-opiniones{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+        }
+
+    .contenedor-opiniones{
+        grid-template-areas: 
+        "marca1"
+        "opinion1"
+        "marca2"
+        "opinion2"
+        "marca3"
+        "opinion3"
+        "marca4"
+        "opinion4"
+        "marca5"
+        "opinion5";
+        grid-template-columns: 95%;
+        grid-template-rows: 450px 850px repeat(4,450px 850px);
+    }
+
+    /*Contacto*/
+    .titulo-formulario{
+        max-width: 80%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2.0rem;
+    }
+
+    .flex-contacto{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        row-gap: 20px;
+    }
+
+    .formulario{
+        width: 95%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+        
+        
 }
