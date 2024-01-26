@@ -3,7 +3,7 @@ html {
     font-size: 62.5%;
 }
 
-/* Elimina márgenes y rellenos por defecto*/
+/* Elimina márgenes y rellenos*/
 * {
     margin: 0px;
     padding: 0px;
@@ -42,7 +42,8 @@ body {
     color: #333333;
 }
 
-/* Estilos para la sección específica del índice */
+/*INDEX*/
+/* Estilos para flex del index */
 .flex-index {
     display: flex;
     flex-direction: row;
@@ -50,7 +51,7 @@ body {
     margin: 100px;
 }
 
-/* Estilos para el párrafo de bienvenida */
+/* Párrafo de bienvenida */
 .bienvenido {
     line-height: 27px;
     text-align: justify;
@@ -59,13 +60,13 @@ body {
     margin: 50px;
 }
 
-/* Estilos para el banner de la sección */
+/* Banner de la sección index */
 .banner {
     width: 100%;
     height: 400px;
 }
 
-/* Estilos para el título de la sección */
+/* Estilos para el título de las paginas en general */
 .titulo {
     font-size: 3.5rem;
     text-decoration: underline;
@@ -73,7 +74,7 @@ body {
     padding-top: 30px;
 }
 
-/* Estilos para subtítulos */
+/* Estilos para subtítulos de las paginas en general */
 h2 {
     font-size: 2.5rem;
 }
@@ -85,34 +86,132 @@ h2 {
     font-size: 2.5rem;
 }
 
-/* Estilos para párrafos de texto justificado */
+/* Estilos para párrafos */
 p {
     text-align: justify;
     font-size: 2.0rem;
 }
 
-/* Estilos para la imagen de la empresa */
+/* Imagen empresa index */
 .empresa {
     width: 720px;
     height: 500px;
 }
 
-/* Estilos para texto de aclaración en gris */
+/* Boton en pie de paginas */
+main section a {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+
+/*PÁGINA SERVICIOS*/
+/* Banner de servicios */
+.banner-servicios {
+    width: 100%;
+    height: 400px;
+}
+
+/* Parrafo de servicios */
+.parrafo-servicios{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 30px;
+}
+
+/* Grid para la sección de servicios */
+.contenedor-servicios{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6";
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 400px 400px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+    padding-bottom: 50px;
+}
+
+/* Cuadro contenedor de servicios */
+.servicios {
+    background-color: antiquewhite;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border: 5px solid black; 
+    padding: 20px; 
+    margin: 20px;
+}
+
+/* Detalle del tipo de servicio */
 .aclaracion {
     color: grey;
 }
 
-/* Estilos para texto de clientes subrayado */
+/* Párrafos de servicios */
+.servicios p {
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+/* Estilos para títulos de servicios */
+h3{
+    font-size: 2.2rem;
+    text-decoration: solid underline;
+}
+
+/* PÁGINA NOSOTROS */
+/* Grid para la sección de nosotros */
+.contenedor-nosotros{
+    display: grid;
+    grid-template-areas: 
+    "texto1 img1"
+    "texto2 texto2";
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 600px 350px;
+    justify-content: space-evenly;
+    justify-items: end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Imagen contadora */
+.imgalderete{
+    grid-area: img1;
+}
+
+/* Párrafos de la historia de nosotros */
+.texto1-nosotros{
+    grid-area: texto1;
+}
+
+.texto2-nosotros{
+    grid-area: texto2;
+}
+
+/* PÁGINA DE OPINIONES */
+/* Nombres de clientes */
 .clientes {
     text-decoration: underline;
 }
 
-/* Estilos para la imagen del cliente */
+/* Imagen del cliente */
 .foto-cliente {
     width: 300px;
     height: 450px;
 }
 
+/* Párrafo de presentación de página */
 .parrafo-opiniones{
 margin-left: 300px;
 margin-right: 300px;
@@ -120,7 +219,7 @@ margin-top: 50px;
 margin-bottom: 50px;
 }
 
-/* Estilos para la sección de opiniones */
+/* Cuadro contenedor de opiniones */
 .opiniones {
     background-color: antiquewhite;
     width: 400px;
@@ -130,11 +229,12 @@ margin-bottom: 50px;
     margin: 10px;
 }
 
+/* Estilo párrafo opiniones */
 .opiniones p{
     text-align: center;
 }
 
-/* Estilos de grid para la sección de opiniones */
+/* Grid para la sección de opiniones */
 .contenedor-opiniones{
     display: grid;
     grid-template-areas: 
@@ -153,6 +253,7 @@ margin-bottom: 50px;
     padding-bottom: 50px;
 }
 
+/* Ubicaciones en grid */
 .cliente1{
     grid-area: opinion1;
 }
@@ -193,98 +294,8 @@ margin-bottom: 50px;
     grid-area: marca5;
 }
 
-/* Estilos para el banner de servicios */
-.banner-servicios {
-    width: 100%;
-    height: 400px;
-}
-
-/* Estilos para el parrafo de servicios */
-.parrafo-servicios{
-    padding-top: 50px;
-    padding-bottom: 150px;
-    padding-left: 300px;
-    padding-right: 300px;
-    line-height: 30px;
-}
-
-/* Estilos de grid para la sección de servicios */
-.contenedor-servicios{
-    display: grid;
-    grid-template-areas: 
-    "img1 img2 img3"
-    "img4 img5 img6";
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 400px 400px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    row-gap: 20px;
-    padding-bottom: 50px;
-}
-
-/* Estilos para la sección de servicios */
-.servicios {
-    background-color: antiquewhite;
-    width: 300px;
-    height: 400px;
-    text-align: center;
-    border: 5px solid black; 
-    padding: 20px; 
-    margin: 20px;
-}
-
-/* Estilos para títulos de servicios */
-h3{
-    font-size: 2.2rem;
-    text-decoration: solid underline;
-}
-
-/* Estilos para párrafos de servicios */
-.servicios p {
-    text-align: center;
-    font-size: 1.9rem;
-}
-
-/* Estilos de grid para la sección de nosotros */
-.contenedor-nosotros{
-    display: grid;
-    grid-template-areas: 
-    "texto1 img1"
-    "texto2 texto2";
-    grid-template-columns: 50% 30%;
-    grid-template-rows: 600px 350px;
-    justify-content: space-evenly;
-    justify-items: end;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.imgalderete{
-    grid-area: img1;
-}
-
-.texto1-nosotros{
-    grid-area: texto1;
-}
-
-.texto2-nosotros{
-    grid-area: texto2;
-}
-
-/* Estilos para enlaces en secciones principales */
-main section a {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: crimson;
-    color: aliceblue;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.8rem;
-    border-radius: 5px;
-}
-
+/* PÁGINA CONTACTO */
+/* Flex página contacto*/
 .flex-contacto{
     display: flex;
     flex-direction: row;
@@ -293,6 +304,7 @@ main section a {
     padding-top: 50px;
 }
 
+/* Titulo para dejar mensaje */
 .titulo-formulario{
     display: block;
     margin: 20px auto;
@@ -316,20 +328,22 @@ main section a {
     font-size: 1.8rem;
 }
 
+/* Ajusta cajas del formulario */
 .formulario input {
-    width: 100%; /* O ajusta el valor según tus necesidades */
+    width: 100%;
   }
 
 .formulario textarea {
-    width: 100%; /* O ajusta el valor según tus necesidades */
+    width: 100%;
   }
 
+/* FOOTER */
 /* Estilos para el pie de página */
 footer {
     background-color: crimson;
 }
 
-/* Estilos para párrafos del pie de página */
+/* Párrafos del pie de página */
 footer p {
     font-size: 2.0rem;
     color: white;
@@ -341,7 +355,7 @@ footer p {
     height: 40px;
 }
 
-/* Estilos para*/
+/* Flex en footer*/
 .flex-footer{
     display: flex;
     justify-content: space-between;
@@ -352,7 +366,7 @@ footer p {
  /* Media Q mobile*/
 @media only screen and (max-width: 480px){
 
-    /*Index*/
+    /* PÁGINA INDEX */
 
     .nav-titulo{
         font-size: 2.5rem;
@@ -386,11 +400,11 @@ footer p {
     }
 
     .empresa{
-        max-width: 95%; /* La imagen no será más ancha que su contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
+        max-width: 95%; 
+        height: auto; 
     }
 
-    /*Servicios*/
+    /* PÁGINA SERVICIOS */
 
     .banner-servicios{
         height: 150px;
@@ -435,7 +449,8 @@ footer p {
         font-size: 1.5rem;
     }
 
-    /*Nosotros*/
+    /* PÁGINA NOSOTROS */
+
     .contenedor-nosotros{
         display: grid;
         grid-template-areas: 
@@ -443,8 +458,9 @@ footer p {
         "img1"
         "texto2";
         grid-template-columns: 95%;
-        grid-template-rows: 690px 550px 470px;
+        grid-template-rows: 990px 550px 690px;
         justify-items: center;
+        align-items: center;
     }
 
     .texto1-nosotros p{
@@ -455,7 +471,12 @@ footer p {
         font-size: 1.5rem;
     }
 
-    /*Opiniones*/
+    .imgalderete{
+        max-width: 100%;
+    }
+
+    /* PÁGINA OPINIONES */
+
     .parrafo-opiniones{
         margin-left: 5px;
         margin-right: 5px;
@@ -480,7 +501,36 @@ footer p {
         grid-template-rows: 450px 850px repeat(4,450px 850px);
     }
 
-    /*Contacto*/
+    .opiniones{
+        max-width: 100%;
+    }
+
+    .logo-cliente1{
+        max-width: 100%;
+    }
+    
+    .logo-cliente2{
+        max-width: 100%;
+    }
+    
+    .logo-cliente3{
+        max-width: 100%;
+    }
+    
+    .logo-cliente4{
+        max-width: 100%;
+    }
+    
+    .logo-cliente5{
+        max-width: 100%;
+    }
+
+    .foto-cliente {
+        max-width: 100%;
+    }
+
+    /* PÁGINA CONTACTO */
+
     .titulo-formulario{
         max-width: 80%;
         text-align: center;
@@ -507,8 +557,9 @@ footer p {
 }
 
 
-@media only screen and (min-width: 481px) and (max-width: 760px){
-    /*Index*/
+@media only screen and (min-width: 481px) and (max-width: 1050px){
+
+    /* PÁGINA INDEX */
 
     .nav-titulo{
         font-size: 2.5rem;
@@ -546,7 +597,7 @@ footer p {
         height: auto;
     }
 
-    /*Servicios*/
+    /* PÁGINA SERVICIOS */
 
     .banner-servicios{
         height: 150px;
@@ -591,7 +642,8 @@ footer p {
         font-size: 1.5rem;
     }
 
-    /*Nosotros*/
+    /* PÁGINA NOSOTROS */
+
     .contenedor-nosotros{
         display: grid;
         grid-template-areas: 
@@ -612,7 +664,8 @@ footer p {
         font-size: 1.5rem;
     }
 
-    /*Opiniones*/
+    /* PÁGINA OPINIONES */
+
     .parrafo-opiniones{
         margin-left: 5px;
         margin-right: 5px;
@@ -637,7 +690,8 @@ footer p {
         grid-template-rows: 450px 850px repeat(4,450px 850px);
     }
 
-    /*Contacto*/
+    /* PÁGINA CONTACTO */
+    
     .titulo-formulario{
         max-width: 80%;
         text-align: center;
