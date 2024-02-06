@@ -1,0 +1,35 @@
+/*CONTACTO*/
+
+.titulo-formulario{
+    display: block;
+    margin: 20px auto;
+    background-color: $crimson;
+    color: $blanco;
+    text-align: center;
+    margin-top: 75px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid $negro;
+    border-radius: 5px;
+    max-width: 20%
+}
+.flex-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    .formulario {
+        width: 25vw;
+        border: 5px solid #000000; 
+        padding: 10px; 
+        margin: 10px;
+        font-size: 1.8rem;
+        input {
+            width: 100%;
+        }
+        textarea {
+            width: 100%;
+        }
+    }
+}

@@ -1,5 +1,72 @@
 @import "generales/variables";
 
+/*Estilos generales*/
+
+/* Establece el tamaño base de la fuente en el 62.5% del tamaño por defecto */
+html {
+    font-size: 62.5%;
+    font-family: $font;
+}
+
+/* Elimina márgenes y rellenos*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Establece una altura mínima del 100% del viewport height */
+main {
+    min-height: 100vh;
+    section a {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: crimson;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.8rem;
+        border-radius: 5px;
+    }
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    background-color: $blanco;
+    color: $negroclaro;
+}
+
+/* Estilos para párrafos */
+p {
+    text-align: justify;
+    font-size: 2.0rem;
+}
+
+/* Estilos para el título de las paginas en general */
+h1 {
+    font-size: 3.5rem;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Estilos para subtítulos de las paginas en general */
+h2 {
+    font-size: 2.5rem;
+}
+
+/* Estilos para subtítulos grises */
+.subtitulo {
+    color: $gris;
+    text-align: center;
+}
+
+/* Estilos para títulos de servicios */
+h3{
+    font-size: 2.2rem;
+    text-decoration: solid underline;
+}
+
 
 
 @import "generales/headerfooter";

@@ -1,0 +1,23 @@
+/*NOSOTROS*/
+
+.contenedor-nosotros{
+    display: grid;
+    grid-template-areas: 
+    "texto1 img1"
+    "texto2 texto2";
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 600px 350px;
+    justify-content: space-evenly;
+    justify-items: end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .imgalderete{
+        grid-area: img1;
+    }
+    .texto1-nosotros{
+        grid-area: texto1;
+    }
+    .texto2-nosotros{
+        grid-area: texto2;
+    }
+}

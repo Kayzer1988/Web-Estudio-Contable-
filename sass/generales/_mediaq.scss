@@ -1,0 +1,300 @@
+/*MEDIA Q MOBILE*/
+
+@media only screen and (max-width: 480px) {
+    /*INDEX*/
+    .nav-titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .banner{
+        height: 150px;
+    }
+    .flex-index{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding-top: 20px;
+        flex-grow: 1; 
+        .bienvenido{
+            font-size: 1.5rem;
+            width: 95%;
+            text-align: justify;
+        }
+        .empresa{
+            max-width: 95%;
+            height: auto;
+        }           
+    }
+
+    /*SERVICIOS*/
+    .banner-servicios{
+        height: 150px;
+    }
+    .subtitulo{
+        font-size: 1.9rem;
+    }
+    .parrafo-servicios{
+        font-size: 1.5rem;
+        text-align: justify;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 25px;
+    }
+    .contenedor-servicios{
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+        grid-template-columns: 50%;
+        grid-template-rows: 400px repeat(5,400px);
+        align-items: center;
+        .servicios{
+            width: 250px;
+            height: 350px;
+            padding: 5px;
+            margin: 10px;
+            h3{
+                font-size: 2.0rem;
+            }
+            .aclaracion{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    /*NOSOTROS*/
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-areas: 
+        "texto1"
+        "img1"
+        "texto2";
+        grid-template-columns: 95%;
+        grid-template-rows: 990px 550px 690px;
+        justify-items: center;
+        align-items: center;
+        .imgalderete{
+            max-width: 100%;
+        }
+        .texto1-nosotros p{
+            font-size: 1.5rem;
+        }
+        .texto2-nosotros p{
+            font-size: 1.5rem;
+        }
+
+    }
+
+    /*OPINIONES*/
+    .parrafo-opiniones{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+        }
+    .contenedor-opiniones{
+        grid-template-areas: 
+        "marca1"
+        "opinion1"
+        "marca2"
+        "opinion2"
+        "marca3"
+        "opinion3"
+        "marca4"
+        "opinion4"
+        "marca5"
+        "opinion5";
+        grid-template-columns: 95%;
+        grid-template-rows: 450px 850px repeat(4,450px 850px);
+        .opiniones{
+            max-width: 100%;
+        }
+    
+        .logo-cliente1{
+            max-width: 100%;
+        }
+        
+        .logo-cliente2{
+            max-width: 100%;
+        }
+        
+        .logo-cliente3{
+            max-width: 100%;
+        }
+        
+        .logo-cliente4{
+            max-width: 100%;
+        }
+        
+        .logo-cliente5{
+            max-width: 100%;
+        }
+    
+        .foto-cliente {
+            max-width: 100%;
+        }
+    }  
+
+    /*CONTACTO*/
+    .titulo-formulario{
+        max-width: 80%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2.0rem;
+    }
+    .flex-contacto{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        row-gap: 20px;
+        .formulario{
+            width: 95%;
+        }
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 481px) and (max-width: 1050px){
+    /*INDEX*/
+    .nav-titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .banner{
+        height: 150px;
+    }
+    .flex-index{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding-top: 20px;
+        flex-grow: 1;
+        .bienvenido{
+            font-size: 1.5rem;
+            width: 95%;
+            text-align: justify;
+        }
+        .empresa{
+            max-width: 95%;
+            height: auto;
+        }
+    }
+
+    /*SERVICIOS*/
+    .banner-servicios{
+        height: 150px;
+    }
+    .subtitulo{
+        font-size: 2.1rem;
+    }
+    .parrafo-servicios{
+        font-size: 1.5rem;
+        text-align: justify;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 25px;
+    }
+    .contenedor-servicios{
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+        grid-template-columns: 50%;
+        grid-template-rows: 400px repeat(5,400px);
+        align-items: center;
+        .servicios{
+            width: 250px;
+            height: 350px;
+            padding: 5px;
+            margin: 10px;
+            h3{
+                font-size: 2.0rem;
+            }
+            .aclaracion{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    /*NOSOTROS*/
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-areas: 
+        "texto1"
+        "img1"
+        "texto2";
+        grid-template-columns: 95%;
+        grid-template-rows: 650px 550px 470px;
+        justify-items: center;
+        align-items: center;
+        .texto1-nosotros p{
+            font-size: 1.5rem;
+        }
+        .texto2-nosotros p{
+            font-size: 1.5rem;
+        }
+    }
+
+    /*OPINIONES*/
+    .parrafo-opiniones{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+    }
+    .contenedor-opiniones{
+        grid-template-areas: 
+        "marca1"
+        "opinion1"
+        "marca2"
+        "opinion2"
+        "marca3"
+        "opinion3"
+        "marca4"
+        "opinion4"
+        "marca5"
+        "opinion5";
+        grid-template-columns: 95%;
+        grid-template-rows: 450px 850px repeat(4,450px 850px);
+    }
+
+    /*CONTACTO*/
+    .titulo-formulario{
+        max-width: 80%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2.0rem;
+    }
+    .flex-contacto{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        row-gap: 20px;
+        .formulario{
+            width: 95%;
+        }
+    }
+    iframe{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,73 @@
+/*OPIONIONES*/
+
+.parrafo-opiniones{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contenedor-opiniones{
+    display: grid;
+    grid-template-areas: 
+    "opinion1 marca1"
+    "marca2   opinion2"
+    "opinion3 marca3"
+    "marca4   opinion4"
+    "opinion5 marca5";
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 850px repeat(4,850px);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    row-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .opiniones {
+        background-color: $crema;
+        width: 400px;
+        text-align: center;
+        border: 5px solid $negro; 
+        padding: 10px; 
+        margin: 10px;
+        .foto-cliente {
+            width: 300px;
+            height: 450px;
+        }
+        .clientes{
+            text-decoration: underline;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .cliente1{
+        grid-area: opinion1;
+    }
+    .cliente2{
+        grid-area: opinion2;
+    }
+    .cliente3{
+        grid-area: opinion3;
+    }
+    .cliente4{
+        grid-area: opinion4;
+    }
+    .cliente5{
+        grid-area: opinion5;
+    }
+    .logo-cliente1{
+        grid-area: marca1;
+    }
+    .logo-cliente2{
+        grid-area: marca2;
+    }   
+    .logo-cliente3{
+        grid-area: marca3;
+    }
+    .logo-cliente4{
+        grid-area: marca4;
+    }
+    .logo-cliente5{
+        grid-area: marca5;
+    }
+}

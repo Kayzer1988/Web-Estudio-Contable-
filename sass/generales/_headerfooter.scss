@@ -1,0 +1,41 @@
+/*header*/
+
+header{
+    position: sticky;
+    top: 0%;
+    .header-mio {
+        background-color: $crimson;
+        font-size: 2.5rem;
+        a{
+            color: $blanco;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .nav-titulo{
+            font-size: 3.0rem;
+            margin-left: auto;
+            color: $blanco;
+        }
+    }
+}
+
+/*Footer*/
+/* Estilos para el pie de página */
+footer {
+    background-color: $crimson;
+    p {
+        font-size: 2.0rem;
+        color: $blanco;
+    }
+    .flex-footer{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 100px;
+        margin-left: 100px;
+        .redes-sociales {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
