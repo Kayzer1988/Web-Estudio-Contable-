@@ -32,6 +32,7 @@ main section a {
 body {
   background-color: #ffffff;
   color: #333333;
+  background-image: linear-gradient(to right bottom, #dc143c, #ee608e, #ec9ccd, #ebd1f2, #ffffff);
 }
 
 /* Estilos para párrafos */
@@ -69,6 +70,7 @@ h3 {
 header {
   position: sticky;
   top: 0%;
+  z-index: 1000;
 }
 header .header-mio {
   background-color: #dc143c;
