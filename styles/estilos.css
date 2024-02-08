@@ -26,6 +26,7 @@ main section a {
   text-decoration: none;
   font-size: 1.8rem;
   border-radius: 5px;
+  bottom: 20px;
 }
 
 /* Estilos generales del cuerpo de la página */
