@@ -1,6 +1,11 @@
 /*MEDIA Q MOBILE*/
 
 @media only screen and (max-width: 480px) {
+    p {
+        text-align: justify;
+        font-size: 1.7rem;
+    }
+   
     /*INDEX*/
     .nav-titulo{
         font-size: 2.5rem;
@@ -16,7 +21,7 @@
         padding-top: 20px;
         flex-grow: 1; 
         .bienvenido{
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             width: 95%;
             text-align: justify;
         }
@@ -34,7 +39,7 @@
         font-size: 1.9rem;
     }
     .parrafo-servicios{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-align: justify;
         padding-top: 30px;
         padding-bottom: 40px;
@@ -56,14 +61,14 @@
         align-items: center;
         .servicios{
             width: 250px;
-            height: 350px;
+            height: 370px;
             padding: 5px;
             margin: 10px;
             h3{
                 font-size: 2.0rem;
             }
             .aclaracion{
-                font-size: 1.4rem;
+                font-size: 1.7rem;
             }
         }
     }
@@ -76,17 +81,17 @@
         "img1"
         "texto2";
         grid-template-columns: 95%;
-        grid-template-rows: 990px 550px 690px;
+        grid-template-rows: 1200px 550px 790px;
         justify-items: center;
         align-items: center;
         .imgalderete{
             max-width: 100%;
         }
         .texto1-nosotros p{
-            font-size: 1.5rem;
+            font-size: 1.7rem;
         }
         .texto2-nosotros p{
-            font-size: 1.5rem;
+            font-size: 1.7rem;
         }
 
     }
@@ -98,7 +103,7 @@
         margin-right: 5px;
         margin-top: 40px;
         margin-bottom: 0px;
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         }
     .contenedor-opiniones{
         grid-template-areas: 
@@ -167,13 +172,18 @@
 
 /*TABLET*/
 @media only screen and (min-width: 481px) and (max-width: 1050px){
+    p {
+        text-align: justify;
+        font-size: 1.8rem;
+    }
+    
     /*INDEX*/
     .nav-titulo{
         font-size: 2.5rem;
         text-align: center;
     }
     .banner{
-        height: 150px;
+        height: 220px;
     }
     .flex-index{
         flex-direction: column;
@@ -182,7 +192,7 @@
         padding-top: 20px;
         flex-grow: 1;
         .bienvenido{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             width: 95%;
             text-align: justify;
         }
@@ -194,13 +204,13 @@
 
     /*SERVICIOS*/
     .banner-servicios{
-        height: 150px;
+        height: 220px;
     }
     .subtitulo{
         font-size: 2.1rem;
     }
     .parrafo-servicios{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: justify;
         padding-top: 30px;
         padding-bottom: 40px;
@@ -222,14 +232,14 @@
         align-items: center;
         .servicios{
             width: 250px;
-            height: 350px;
+            height: 370px;
             padding: 5px;
             margin: 10px;
             h3{
                 font-size: 2.0rem;
             }
             .aclaracion{
-                font-size: 1.5rem;
+                font-size: 1.7rem;
             }
         }
     }
@@ -242,14 +252,14 @@
         "img1"
         "texto2";
         grid-template-columns: 95%;
-        grid-template-rows: 650px 550px 470px;
+        grid-template-rows: 1250px 550px 850px;
         justify-items: center;
         align-items: center;
         .texto1-nosotros p{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
         .texto2-nosotros p{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
     }
 
@@ -298,5 +308,7 @@
     iframe{
         width: 100%;
     }
+
+
 
 }

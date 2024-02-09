@@ -301,6 +301,10 @@ footer .flex-footer .redes-sociales {
 
 /*MEDIA Q MOBILE*/
 @media only screen and (max-width: 480px) {
+  p {
+    text-align: justify;
+    font-size: 1.7rem;
+  }
   /*INDEX*/
   .nav-titulo {
     font-size: 2.5rem;
@@ -317,7 +321,7 @@ footer .flex-footer .redes-sociales {
     flex-grow: 1;
   }
   .flex-index .bienvenido {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     width: 95%;
     text-align: justify;
   }
@@ -333,7 +337,7 @@ footer .flex-footer .redes-sociales {
     font-size: 1.9rem;
   }
   .parrafo-servicios {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: justify;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -350,7 +354,7 @@ footer .flex-footer .redes-sociales {
   }
   .contenedor-servicios .servicios {
     width: 250px;
-    height: 350px;
+    height: 370px;
     padding: 5px;
     margin: 10px;
   }
@@ -358,14 +362,14 @@ footer .flex-footer .redes-sociales {
     font-size: 2rem;
   }
   .contenedor-servicios .servicios .aclaracion {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
   /*NOSOTROS*/
   .contenedor-nosotros {
     display: grid;
     grid-template-areas: "texto1" "img1" "texto2";
     grid-template-columns: 95%;
-    grid-template-rows: 990px 550px 690px;
+    grid-template-rows: 1200px 550px 790px;
     justify-items: center;
     align-items: center;
   }
@@ -373,10 +377,10 @@ footer .flex-footer .redes-sociales {
     max-width: 100%;
   }
   .contenedor-nosotros .texto1-nosotros p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .contenedor-nosotros .texto2-nosotros p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   /*OPINIONES*/
   .parrafo-opiniones {
@@ -385,7 +389,7 @@ footer .flex-footer .redes-sociales {
     margin-right: 5px;
     margin-top: 40px;
     margin-bottom: 0px;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
   .contenedor-opiniones {
     grid-template-areas: "marca1" "opinion1" "marca2" "opinion2" "marca3" "opinion3" "marca4" "opinion4" "marca5" "opinion5";
@@ -436,13 +440,17 @@ footer .flex-footer .redes-sociales {
 }
 /*TABLET*/
 @media only screen and (min-width: 481px) and (max-width: 1050px) {
+  p {
+    text-align: justify;
+    font-size: 1.8rem;
+  }
   /*INDEX*/
   .nav-titulo {
     font-size: 2.5rem;
     text-align: center;
   }
   .banner {
-    height: 150px;
+    height: 220px;
   }
   .flex-index {
     flex-direction: column;
@@ -452,7 +460,7 @@ footer .flex-footer .redes-sociales {
     flex-grow: 1;
   }
   .flex-index .bienvenido {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 95%;
     text-align: justify;
   }
@@ -462,13 +470,13 @@ footer .flex-footer .redes-sociales {
   }
   /*SERVICIOS*/
   .banner-servicios {
-    height: 150px;
+    height: 220px;
   }
   .subtitulo {
     font-size: 2.1rem;
   }
   .parrafo-servicios {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: justify;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -485,7 +493,7 @@ footer .flex-footer .redes-sociales {
   }
   .contenedor-servicios .servicios {
     width: 250px;
-    height: 350px;
+    height: 370px;
     padding: 5px;
     margin: 10px;
   }
@@ -493,22 +501,22 @@ footer .flex-footer .redes-sociales {
     font-size: 2rem;
   }
   .contenedor-servicios .servicios .aclaracion {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   /*NOSOTROS*/
   .contenedor-nosotros {
     display: grid;
     grid-template-areas: "texto1" "img1" "texto2";
     grid-template-columns: 95%;
-    grid-template-rows: 650px 550px 470px;
+    grid-template-rows: 1250px 550px 850px;
     justify-items: center;
     align-items: center;
   }
   .contenedor-nosotros .texto1-nosotros p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .contenedor-nosotros .texto2-nosotros p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   /*OPINIONES*/
   .parrafo-opiniones {
