@@ -171,7 +171,7 @@
 }
 
 /*TABLET*/
-@media only screen and (min-width: 481px) and (max-width: 1050px){
+@media only screen and (min-width: 481px) and (max-width: 750px){
     p {
         text-align: justify;
         font-size: 1.8rem;
@@ -252,7 +252,7 @@
         "img1"
         "texto2";
         grid-template-columns: 95%;
-        grid-template-rows: 1250px 550px 850px;
+        grid-template-rows: 900px 550px 650px;
         justify-items: center;
         align-items: center;
         .texto1-nosotros p{
@@ -270,7 +270,7 @@
         margin-right: 5px;
         margin-top: 40px;
         margin-bottom: 0px;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .contenedor-opiniones{
         grid-template-areas: 
@@ -308,7 +308,281 @@
     iframe{
         width: 100%;
     }
+}
 
 
+@media only screen and (min-width: 751px) and (max-width: 1050px){
+    p {
+        text-align: justify;
+        font-size: 1.8rem;
+    }
+    
+    /*INDEX*/
+    .nav-titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .banner{
+        height: 220px;
+    }
+    .flex-index{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding-top: 20px;
+        flex-grow: 1;
+        .bienvenido{
+            font-size: 1.8rem;
+            width: 95%;
+            text-align: justify;
+        }
+        .empresa{
+            max-width: 95%;
+            height: auto;
+        }
+    }
 
+    /*SERVICIOS*/
+    .banner-servicios{
+        height: 220px;
+    }
+    .subtitulo{
+        font-size: 2.1rem;
+    }
+    .parrafo-servicios{
+        font-size: 1.8rem;
+        text-align: justify;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 25px;
+    }
+    .contenedor-servicios{
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+        grid-template-columns: 50%;
+        grid-template-rows: 400px repeat(5,400px);
+        align-items: center;
+        .servicios{
+            width: 250px;
+            height: 370px;
+            padding: 5px;
+            margin: 10px;
+            h3{
+                font-size: 2.0rem;
+            }
+            .aclaracion{
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    /*NOSOTROS*/
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-areas: 
+        "texto1"
+        "img1"
+        "texto2";
+        grid-template-columns: 95%;
+        grid-template-rows: 600px 550px 400px;
+        justify-items: center;
+        align-items: center;
+        .texto1-nosotros p{
+            font-size: 1.8rem;
+        }
+        .texto2-nosotros p{
+            font-size: 1.8rem;
+        }
+    }
+
+    /*OPINIONES*/
+    .parrafo-opiniones{
+        max-width: 95%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        font-size: 1.8rem;
+    }
+    .contenedor-opiniones{
+        grid-template-areas: 
+        "marca1"
+        "opinion1"
+        "marca2"
+        "opinion2"
+        "marca3"
+        "opinion3"
+        "marca4"
+        "opinion4"
+        "marca5"
+        "opinion5";
+        grid-template-columns: 95%;
+        grid-template-rows: 450px 850px repeat(4,450px 850px);
+    }
+
+    /*CONTACTO*/
+    .titulo-formulario{
+        max-width: 80%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2.0rem;
+    }
+    .flex-contacto{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        row-gap: 20px;
+        .formulario{
+            width: 95%;
+        }
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1051px) and (max-width: 1500px){
+    p {
+        text-align: justify;
+        font-size: 1.8rem;
+    }
+    
+    /*INDEX*/
+    .nav-titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .banner{
+        height: 250px;
+    }
+    .flex-index{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding-top: 20px;
+        flex-grow: 1;
+        .bienvenido{
+            font-size: 1.8rem;
+            width: 95%;
+            text-align: justify;
+        }
+        .empresa{
+            max-width: 95%;
+            height: auto;
+        }
+    }
+
+    /*SERVICIOS*/
+    .banner-servicios{
+        height: 250px;
+    }
+    .subtitulo{
+        font-size: 2.1rem;
+    }
+    .parrafo-servicios{
+        font-size: 1.8rem;
+        text-align: justify;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 25px;
+    }
+    .contenedor-servicios{
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+        grid-template-columns: 50%;
+        grid-template-rows: 400px repeat(5,400px);
+        align-items: center;
+        .servicios{
+            width: 250px;
+            height: 370px;
+            padding: 5px;
+            margin: 10px;
+            h3{
+                font-size: 2.0rem;
+            }
+            .aclaracion{
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    /*NOSOTROS*/
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-areas: 
+        "texto1"
+        "img1"
+        "texto2";
+        grid-template-columns: 95%;
+        grid-template-rows: 430px 550px 320px;
+        justify-items: center;
+        align-items: center;
+        .texto1-nosotros p{
+            font-size: 1.8rem;
+        }
+        .texto2-nosotros p{
+            font-size: 1.8rem;
+        }
+    }
+
+    /*OPINIONES*/
+    .parrafo-opiniones{
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        font-size: 1.8rem;
+    }
+
+    /*CONTACTO*/
+    .titulo-formulario{
+        max-width: 80%;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2.0rem;
+    }
+    .flex-contacto{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        row-gap: 20px;
+        align-items: center;
+        .formulario{
+            width: 50vw;
+        } 
+    }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1686px){
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-areas: 
+        "texto1 img1"
+        "texto2 texto2";
+        grid-template-columns: 50% 30%;
+        grid-template-rows: 700px 350px;
+        justify-content: space-evenly;
+        justify-items: end;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }

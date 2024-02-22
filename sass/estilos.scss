@@ -18,16 +18,16 @@ html {
 main {
     min-height: 100vh;
     section a {
+        bottom: 20px;
         display: block;
         margin: 20px auto;
         padding: 10px 20px;
-        background-color: crimson;
-        color: #ffffff;
+        background-color: $crimson;
+        color: $blanco;
         text-align: center;
         text-decoration: none;
         font-size: 1.8rem;
         border-radius: 5px;
-        bottom: 20px;
     }
 }
 

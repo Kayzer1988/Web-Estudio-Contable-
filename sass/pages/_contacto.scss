@@ -20,12 +20,14 @@
     justify-content: space-evenly;
     padding-top: 50px;
     .formulario {
-        width: 25vw;
+        text-align: center;
+        width: 30vw;
         border: 5px solid #000000; 
         padding: 10px; 
         margin: 10px;
         font-size: 1.8rem;
         input {
+            text-align: center;
             width: 100%;
         }
         textarea {
